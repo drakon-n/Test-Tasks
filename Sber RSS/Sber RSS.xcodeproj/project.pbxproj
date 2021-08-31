@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		714AB380252E08690040D2B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AB37F252E08690040D2B8 /* AppDelegate.swift */; };
+		714AB382252E08690040D2B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AB381252E08690040D2B8 /* SceneDelegate.swift */; };
+		714AB384252E08690040D2B8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AB383252E08690040D2B8 /* StartViewController.swift */; };
+		714AB389252E086C0040D2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714AB388252E086C0040D2B8 /* Assets.xcassets */; };
+		714AB38C252E086C0040D2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714AB38A252E086C0040D2B8 /* LaunchScreen.storyboard */; };
+		714AB394252E08E70040D2B8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AB393252E08E70040D2B8 /* NewsViewController.swift */; };
+		714AB3B82530A2CC0040D2B8 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AB3B72530A2CC0040D2B8 /* NewsCell.swift */; };
+		714AB3BB2530B94A0040D2B8 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AB3BA2530B94A0040D2B8 /* CellModel.swift */; };
+		714AB3BE25370AE40040D2B8 /* Contsraint_func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AB3BD25370AE40040D2B8 /* Contsraint_func.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		714AB37C252E08690040D2B8 /* Sber RSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sber RSS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		714AB37F252E08690040D2B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		714AB381252E08690040D2B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		714AB383252E08690040D2B8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		714AB388252E086C0040D2B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		714AB38B252E086C0040D2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		714AB38D252E086C0040D2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		714AB393252E08E70040D2B8 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		714AB3B72530A2CC0040D2B8 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		714AB3BA2530B94A0040D2B8 /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		714AB3BD25370AE40040D2B8 /* Contsraint_func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contsraint_func.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		714AB379252E08690040D2B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		714AB373252E08690040D2B8 = {
+			isa = PBXGroup;
+			children = (
+				714AB37E252E08690040D2B8 /* Sber RSS */,
+				714AB37D252E08690040D2B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		714AB37D252E08690040D2B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				714AB37C252E08690040D2B8 /* Sber RSS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		714AB37E252E08690040D2B8 /* Sber RSS */ = {
+			isa = PBXGroup;
+			children = (
+				714AB3BC2530EDAA0040D2B8 /* News */,
+				714AB37F252E08690040D2B8 /* AppDelegate.swift */,
+				714AB381252E08690040D2B8 /* SceneDelegate.swift */,
+				714AB383252E08690040D2B8 /* StartViewController.swift */,
+				714AB388252E086C0040D2B8 /* Assets.xcassets */,
+				714AB38A252E086C0040D2B8 /* LaunchScreen.storyboard */,
+				714AB38D252E086C0040D2B8 /* Info.plist */,
+			);
+			path = "Sber RSS";
+			sourceTree = "<group>";
+		};
+		714AB3B92530B92E0040D2B8 /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				714AB3B72530A2CC0040D2B8 /* NewsCell.swift */,
+				714AB3BD25370AE40040D2B8 /* Contsraint_func.swift */,
+				714AB3BA2530B94A0040D2B8 /* CellModel.swift */,
+			);
+			path = NewsCell;
+			sourceTree = "<group>";
+		};
+		714AB3BC2530EDAA0040D2B8 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				714AB393252E08E70040D2B8 /* NewsViewController.swift */,
+				714AB3B92530B92E0040D2B8 /* NewsCell */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		714AB37B252E08690040D2B8 /* Sber RSS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 714AB390252E086C0040D2B8 /* Build configuration list for PBXNativeTarget "Sber RSS" */;
+			buildPhases = (
+				714AB378252E08690040D2B8 /* Sources */,
+				714AB379252E08690040D2B8 /* Frameworks */,
+				714AB37A252E08690040D2B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sber RSS";
+			productName = "Sber RSS";
+			productReference = 714AB37C252E08690040D2B8 /* Sber RSS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		714AB374252E08690040D2B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Влад";
+				TargetAttributes = {
+					714AB37B252E08690040D2B8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 714AB377252E08690040D2B8 /* Build configuration list for PBXProject "Sber RSS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 714AB373252E08690040D2B8;
+			productRefGroup = 714AB37D252E08690040D2B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				714AB37B252E08690040D2B8 /* Sber RSS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		714AB37A252E08690040D2B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714AB38C252E086C0040D2B8 /* LaunchScreen.storyboard in Resources */,
+				714AB389252E086C0040D2B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		714AB378252E08690040D2B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714AB394252E08E70040D2B8 /* NewsViewController.swift in Sources */,
+				714AB384252E08690040D2B8 /* StartViewController.swift in Sources */,
+				714AB380252E08690040D2B8 /* AppDelegate.swift in Sources */,
+				714AB382252E08690040D2B8 /* SceneDelegate.swift in Sources */,
+				714AB3B82530A2CC0040D2B8 /* NewsCell.swift in Sources */,
+				714AB3BB2530B94A0040D2B8 /* CellModel.swift in Sources */,
+				714AB3BE25370AE40040D2B8 /* Contsraint_func.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		714AB38A252E086C0040D2B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				714AB38B252E086C0040D2B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		714AB38E252E086C0040D2B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		714AB38F252E086C0040D2B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		714AB391252E086C0040D2B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JP7GR6434;
+				INFOPLIST_FILE = "Sber RSS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Drakon-n.Sber-RSS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		714AB392252E086C0040D2B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JP7GR6434;
+				INFOPLIST_FILE = "Sber RSS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Drakon-n.Sber-RSS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		714AB377252E08690040D2B8 /* Build configuration list for PBXProject "Sber RSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714AB38E252E086C0040D2B8 /* Debug */,
+				714AB38F252E086C0040D2B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		714AB390252E086C0040D2B8 /* Build configuration list for PBXNativeTarget "Sber RSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714AB391252E086C0040D2B8 /* Debug */,
+				714AB392252E086C0040D2B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 714AB374252E08690040D2B8 /* Project object */;
+}
