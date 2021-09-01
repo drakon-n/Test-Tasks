@@ -8,6 +8,10 @@
 import UIKit
 import CoreData
 
+
+protocol BasketStateUpdater: AnyObject {
+    func updateBasketState(state:Bool, index: Int)
+}
 class GoodCell: UICollectionViewCell {
 
     @IBOutlet weak var GoodImage: UIImageView!
@@ -17,9 +21,11 @@ class GoodCell: UICollectionViewCell {
     @IBOutlet weak var finalPrice: UILabel!
     @IBOutlet weak var basketButton: UIButton!
     @IBOutlet weak var goodDescription: UILabel!
+    weak var delegate: BasketStateUpdater?
     var isOnBasket:Bool = false
     var identifier: String = ""
     var inBaseNumber = 0
+    var index:Int = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,7 +44,6 @@ class GoodCell: UICollectionViewCell {
             UserDefaults.standard.set(isOnBasket, forKey: identifier)
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
-            
             context.delete(basketData[inBaseNumber])
             do{
                 try context.save()
@@ -53,6 +58,7 @@ class GoodCell: UICollectionViewCell {
         {
             isOnBasket = true
             basketButton.isEnabled = false //я не придумал как удалять товары из корзины в правильном порядке, без громоздкого поиска в кор дате
+            ChangeBasketState(state: isOnBasket)
             basketButton.setTitle("В корзине", for: .normal)
             basketButton.setTitleColor(UIColor.systemGreen, for: .normal)
             
@@ -79,6 +85,7 @@ class GoodCell: UICollectionViewCell {
             }
         }
     }
+    
     func setupCell(product:Product){
         self.GoodImage.image = product.image
         self.goodName.text = product.name
@@ -86,6 +93,19 @@ class GoodCell: UICollectionViewCell {
         self.goodDescription.text = product.description
         self.goodRate.text = String(describing: product.rate)
         self.finalPrice.text = String(describing: product.price) + "₽"
+        
+        if (isOnBasket){
+            self.basketButton.setTitle("В корзине", for: .normal) //я не понимаю почему значения начинают мелькать на противоположные при обновлении коллекции
+            self.basketButton.setTitleColor(.systemGreen, for: .normal)
+            self.basketButton.isEnabled = false
+        }
+        else{
+            self.basketButton.setTitle("В корзину", for: .normal)
+            self.basketButton.setTitleColor(.systemBlue, for: .normal)
+        }
     }
-
+    
+    func ChangeBasketState(state:Bool){
+        delegate?.updateBasketState(state: state, index:self.index)
+    }
 }

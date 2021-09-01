@@ -12,6 +12,7 @@
 		71E15AE826DD424F00737941 /* BucketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E15AE726DD424F00737941 /* BucketViewController.swift */; };
 		71E15AEC26DD4F7600737941 /* BucketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E15AEA26DD4F7600737941 /* BucketCell.swift */; };
 		71E15AED26DD4F7600737941 /* BucketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E15AEB26DD4F7600737941 /* BucketCell.xib */; };
+		71E15AEF26DED36B00737941 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E15AEE26DED36B00737941 /* CardView.swift */; };
 		71E3738526D8E9DD00146EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3738426D8E9DD00146EB4 /* AppDelegate.swift */; };
 		71E3738726D8E9DD00146EB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3738626D8E9DD00146EB4 /* SceneDelegate.swift */; };
 		71E3738C26D8E9DD00146EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E3738A26D8E9DD00146EB4 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		71E15AE726DD424F00737941 /* BucketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketViewController.swift; sourceTree = "<group>"; };
 		71E15AEA26DD4F7600737941 /* BucketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketCell.swift; sourceTree = "<group>"; };
 		71E15AEB26DD4F7600737941 /* BucketCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BucketCell.xib; sourceTree = "<group>"; };
+		71E15AEE26DED36B00737941 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		71E3738126D8E9DD00146EB4 /* test_shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_shop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E3738426D8E9DD00146EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71E3738626D8E9DD00146EB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				71E3738626D8E9DD00146EB4 /* SceneDelegate.swift */,
 				71E3738A26D8E9DD00146EB4 /* Main.storyboard */,
 				71E373B426D94B7A00146EB4 /* GoodsViewController.swift */,
+				71E15AEE26DED36B00737941 /* CardView.swift */,
 				71E15AE526DCF82A00737941 /* CoreData.swift */,
 				71E15AE226DCEFA800737941 /* BasketStorage.xcdatamodeld */,
 				71E373BB26D9587900146EB4 /* Goods.swift */,
@@ -304,6 +307,7 @@
 				71E3738726D8E9DD00146EB4 /* SceneDelegate.swift in Sources */,
 				71E15AE826DD424F00737941 /* BucketViewController.swift in Sources */,
 				71E373B926D94D9300146EB4 /* GoodCell.swift in Sources */,
+				71E15AEF26DED36B00737941 /* CardView.swift in Sources */,
 				71E15AEC26DD4F7600737941 /* BucketCell.swift in Sources */,
 				71E373BC26D9587900146EB4 /* Goods.swift in Sources */,
 				71E15AE626DCF82A00737941 /* CoreData.swift in Sources */,

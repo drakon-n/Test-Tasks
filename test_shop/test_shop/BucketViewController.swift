@@ -49,6 +49,10 @@ class BucketViewController: UIViewController{
 }
     
 extension BucketViewController:UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, CustomCellUpdater{
+    func justReload() {
+        BucketCollectionView.reloadData()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return basketData.count
     }
@@ -100,7 +104,6 @@ extension BucketViewController:UICollectionViewDataSource, UICollectionViewDeleg
             }
         }
         BucketCollectionView.reloadData() // you do have an outlet of tableView I assume
-        print(quantityStack)
     }
     
 }

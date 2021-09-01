@@ -7,8 +7,9 @@
 
 import UIKit
 
-protocol CustomCellUpdater: AnyObject { // the name of the protocol you can put any
+protocol CustomCellUpdater: AnyObject { 
     func updateTableView(price: Float, isIncrement:Bool, queue:Int)
+    func justReload()
 }
 
 class BucketCell: UICollectionViewCell {   //опечатка в названии конечно
@@ -58,7 +59,6 @@ class BucketCell: UICollectionViewCell {   //опечатка в названи�
             }
             
         }
-        print("number??", number)
         //numberGoods.text = String(number)
         updatePrice(modifier: 0 - (Float(price) ?? 0), isIncrement: false)
         updateFinalPrice()

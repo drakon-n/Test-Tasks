@@ -8,6 +8,7 @@
 import UIKit
 
 class GoodsViewController: UIViewController {
+    
 
     @IBOutlet weak var goodsCollectionView: UICollectionView!
     var goods:Goods = Goods()
@@ -37,7 +38,7 @@ class GoodsViewController: UIViewController {
 }
     
 
-extension GoodsViewController:UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+extension GoodsViewController:UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, BasketStateUpdater, CustomCellUpdater{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return goods.products.count
@@ -45,6 +46,9 @@ extension GoodsViewController:UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GoodCell", for: indexPath) as! GoodCell
+        cell.delegate = self
+        cell.index = indexPath.item
+        cell.isOnBasket = goods.products[indexPath.item].isOnBasket
         let product = goods.products[indexPath.item]
         cell.setupCell(product: product)
         cell.layer.cornerRadius = 8.0
@@ -63,6 +67,39 @@ extension GoodsViewController:UICollectionViewDataSource, UICollectionViewDelega
         return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 10)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cardView = CardView(frame: CGRect(x:1, y:95, width:UIScreen.main.bounds.width, height:UIScreen.main.bounds.height*0.8))
+        cardView.delegate = self
+        cardView.delegateUpdater = self
+        cardView.goodLabel.text = goods.products[indexPath.item].name
+        cardView.priceLabel.text = String(goods.products[indexPath.item].price) + "₽"
+        cardView.rateLabel.text = String(goods.products[indexPath.item].rate)
+        cardView.descriptionLabel.text = goods.products[indexPath.item].description
+        cardView.goodImage.image = goods.products[indexPath.item].image
+        cardView.index = indexPath.item
+        cardView.goods = goods.products
+        if(goods.products[indexPath.item].isOnBasket==true){
+            cardView.basketButton.setTitle("В корзине", for: .normal)
+            cardView.basketButton.setTitleColor(.systemGreen, for: .normal)
+            cardView.basketButton.isEnabled = false
+        }else{
+            cardView.basketButton.setTitle("В корзину", for: .normal)
+            cardView.basketButton.setTitleColor(.black, for: .normal)
+        }
+        self.view.addSubview(cardView)
+    }
+    
+    func updateBasketState(state:Bool, index: Int){
+        goods.products[index].isOnBasket = state
+    }
+    
+    func updateTableView(price: Float, isIncrement:Bool, queue:Int ) {
+        
+    }
+    
+    func justReload() {
+        goodsCollectionView.reloadData()
+    }
 
 
 }

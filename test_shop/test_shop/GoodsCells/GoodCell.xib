@@ -63,7 +63,6 @@
                         <constraints>
                             <constraint firstAttribute="width" secondItem="HVq-Rq-jxh" secondAttribute="height" multiplier="9:1" id="wuS-bP-4aG"/>
                         </constraints>
-                        <state key="normal" title="В корзину"/>
                         <connections>
                             <action selector="basketTouch:" destination="gTV-IL-0wX" eventType="touchUpInside" id="gd9-Zh-TCn"/>
                         </connections>
